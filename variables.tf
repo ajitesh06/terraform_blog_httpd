@@ -1,19 +1,25 @@
 variable "aws_access_key" {
-default = "XXXXXXXXXXXXXXXXXXXXXX" 
+  description = "place your aws access key here"
+  default = "XXXXXXXXXXXXXXXXXXXXXX" 
 }
 variable "aws_secret_key"{
-default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  description = "place your aws secret key here"
+  default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 }
 variable "key_name" {
-default = "aji"
+   description = "provide your keypair here"
+  default = ""
 }
 variable "aws_region" {
-default = "us-east-1"
+  description = " specify the region in which you want to deploy"
+  default = ""
 }
 variable "ami" {
-default = "ami-643b1972"
+  description = " specify the ami"
+  default = ""
 }
 variable "instance_type" {
-default = "t2.micro"
+  description = " type of instance you want to create"
+  default = ""
 }
 
